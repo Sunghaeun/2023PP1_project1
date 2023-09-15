@@ -37,8 +37,8 @@ public class Word {
         this.word = word;
     }
 
-    public String getMeaning() {
-        return meaning;
+    public String getMeaning(String meaning) {
+        return this.meaning;
     }
 
     public void setMeaning(String meaning) {
