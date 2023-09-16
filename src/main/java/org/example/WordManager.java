@@ -33,7 +33,7 @@ public class WordManager {
                 "    7. 파일 저장\n" +
                 "    0. 나가기\n" +
                 "*************************\n" +
-                "    => 원하는 메뉴는? ");
+                "=> 원하는 메뉴는? ");
         return s.nextInt();
     }
     public void start(){
@@ -46,9 +46,9 @@ public class WordManager {
             } else if (menu==1){
                 wordCRUD.listALL();
             } else if (menu==2){
-                // 수준별로 단어보기
+                wordCRUD.searchLevel();
             } else if (menu==3){
-                //단어 검색
+                wordCRUD.searchWord();
             } else if(menu==4) {
                 wordCRUD.addItem();
             } else if (menu==5){
