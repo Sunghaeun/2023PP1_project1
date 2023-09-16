@@ -37,6 +37,7 @@ public class WordManager {
         return s.nextInt();
     }
     public void start(){
+        wordCRUD.loadFile();
         while(true) {
             int menu = selectMenu();
             if(menu==0) {
@@ -51,13 +52,11 @@ public class WordManager {
             } else if(menu==4) {
                 wordCRUD.addItem();
             } else if (menu==5){
-                //단어 수정
                 wordCRUD.updateItem();
             } else if (menu==6){
-                //단어 삭제
                 wordCRUD.deleteItem();
             } else if (menu==7){
-                //파일 저장
+                wordCRUD.saveFile();
             }
 
         }
